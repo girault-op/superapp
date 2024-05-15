@@ -1,0 +1,326 @@
+* {
+  font-family: OpenSans, sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+}
+body {
+  margin: 50px 0 0 0;
+  padding: 0;
+}
+
+h1 {
+  color: white;
+  font-size: 48px;
+  width: 100%;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+h2 {
+  font-weight: bolder;
+}
+
+.container {
+  width: 100%;
+  margin: 0;
+}
+
+button {
+  border-radius: 5px;
+  width: 120px;
+  height: 46px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+nav {
+  position: fixed;  
+  top: 0;
+  height: 50px;
+  display: flex;
+  background-color: #dd5555;
+  width: 100%;
+}
+
+.navigation ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+.navigation p {
+  align-items: center;
+}
+
+.navigation a {
+  display: flex;
+  color: white;
+  margin: 0;
+  padding: 0 20px 0 20px;
+}
+
+.navigation img {
+  z-index: -1;
+  height: 25px;
+  align-self: center;
+}
+
+a:hover {
+  background-color: black;
+  opacity: 25%;
+}
+
+.introduction .container {
+  background-image: url(images/about.jpg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+  margin-top: 50px;
+}
+
+
+.introduction p {
+  color: white;
+  font-size: 28px;
+  margin: 0;
+  padding: 20px 0;
+}
+.separateur {
+  height: 1px;
+  display: block;
+  width: 100%;
+  background-color: white;
+
+}
+
+.drop {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  justify-content: center;
+  width: 35%;
+}
+.row-btn {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+.accroche h1{
+  color: black;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.container .services {
+  display: block;
+  flex-flow: row;
+  justify-content: space-evenly;
+  margin: 5%;
+}
+
+.service {
+  display: inline-block;
+  width: 25%;
+  margin: 25px;
+}
+
+.background {
+  display: inline-flex;
+  width: 120px;
+  height: 120px;
+  background-color: #dd5555;
+  border-radius: 50%;
+  place-items: center;
+  place-content: center;
+  margin: 0;
+}
+
+.equipe .container {
+  background-image: url(images/team.jpg.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  height: 240px;
+  display: flex;
+  place-items: center;
+}
+
+.membres .container {
+  display: block;
+  margin: 10%;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.membres {
+  display: flex;
+  margin: 45px;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.membres img {
+  border-radius: 50%;
+  margin: 5px;
+}
+
+figcaption {
+  font-size: 28px;
+  font-weight: bolder;
+  margin: 10px;
+}
+
+.membres button {
+  background-color: #dd5555;
+  color: white;
+  display: flex;
+  width: fit-content;
+  margin: auto;
+  place-items: center;
+}
+
+.membres button img {
+  border-radius: 0;
+  margin-right: 4px;
+}
+
+.contact .container {
+  background-color: #dd5555;
+  color: white;
+}
+
+.contact h2 {
+  padding: 50px 0 50px 0;
+  font-size: 36px;
+}
+
+.user-form {
+  width: 50%;
+  margin: 0 25% 0 25%;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 3%;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0 2%;
+}
+
+
+.form-row textarea {
+  border-radius: 2px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.contact button {
+  border-radius: 2px;
+  margin: 0;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.input-classic {
+width: 100%;
+margin-top:15px;
+height: 30px;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+@media (max-width: 749px) {
+
+  body {
+      max-width: 749px;
+      margin-top: 50px;
+  }
+
+  h2 {
+      margin: auto;
+  }
+
+  nav {
+      position: fixed;
+      width: 100%;
+      max-height: 50px;
+  }
+  .navigation ul {
+      display: block;
+      position: relative;
+      top: -15px;
+      left: -30px;
+      opacity: 25%;
+  }
+
+  a:first-of-type {
+      opacity: 100%;
+  }
+
+  button {
+      margin: 10px;
+  }
+  .drop {
+      width: fit-content;
+  }
+  .row-btn {
+      flex-direction: column;
+  }
+
+  .service {
+      display: block;
+      margin: auto;
+      width: 100%;
+  }
+
+  .container .contact {
+      width: 100%
+  }
+  .user-form {
+      display: flex;
+      padding: 5px;
+      flex-direction: column;
+  }
+  .form-row {
+      display: flex;
+      flex-direction: column;
+      width: border-box;
+      margin: 0;
+      justify-content: center;
+
+  }
+.send-test:hover {
+  background-color: black;
+  opacity: 25%;
+}
+}
+
+.submit:hover {
+  background-color: white;
+  opacity: 60%;
+}
+
+
